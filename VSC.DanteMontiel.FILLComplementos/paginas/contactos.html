@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../assetts/Imagenes/fill complementos.png" type="image/x-icon">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="../assetts/css/style.css">
+</head>
+<body class="containerContactos">
+    <nav class="navbarC">
+        <div class="logoC">
+            <img src="../assetts/Imagenes/fill complementos.png" alt="">
+        </div>
+        <ul>
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="./contactos.html">Contacto</a></li>
+            <li><a href="./productos.html">Productos</a></li>
+            <li><a href="./quienesSomos.html">Quienes Somos?</a></li>
+            <li><a href="./fotos.html">Fotos</a></li>
+        </ul>
+        <div class="redesC">
+            <img src="../assetts/Imagenes/whatsapp_png.png">
+            <img src="../assetts/Imagenes/twitter.png" alt="">
+        </div>
+
+    </nav>
+
+    <Header class="headerC">
+        <h1>Contacto</h1>
+    </Header>
+
+    <main class="mainC"> 
+        <Ul class="infocontacto">
+            <li>Número de Telefono: 3875799794</li>
+            <li>Contacto por Whatsapp: 3875788234</li>
+            <li>Email: fillcomplementos@gmail.com</li>
+            <li>Direccion: Boulevard San Juan 1400.</li>
+        </Ul>
+        <br>
+        <br>
+        <br>
+        <form action="contactos.php" >
+            <fieldset class="infopersonal">
+                <legend>Informacion personal</legend>
+
+                <br>
+
+                <div>
+                    <label for="SEXO">Hombre</label>
+                    <input type="radio" name="Sexo" id="Hombre" value="H" required>
+    
+                    <label for="Sexo">Mujer</label>
+                    <input type="radio" name="Sexo" id="Mujer" value="M">
+
+                    <label for="Sexo">Otro</label>
+                    <input type="radio" name="Sexo" id="X" value="X">
+
+                    <br>
+                    <br>
+
+                </div>
+
+                <div>
+                    <label for="Nombre">Nombre</label>
+                    <input type="text" name="nombre" id="name" placeholder="Nombre" required>
+                    <label for="Apellido">Apellido</label>
+                    <input type="text" name="Apellido" id="" placeholder="Apellido" required> 
+                    <br>
+                    <label for="Email">Email</label>
+                    <input type="email" name="Email" id="Email" placeholder="Email" required>
+                </div>
+ 
+
+                           
+                <br>
+
+            <div>
+                <label for="Nacionalidad">Nacionalidad</label>
+                     <select name="Nacionalidad" required>
+                        <option value="ARG"> Argentina </option>
+                        <option value="BRA"> Brasil </option>
+                        <option value="URU"> Uruguay </option>
+                        <option value="X">Otro</option>
+                </select>
+            </div>
+            <br>
+            <br>
+            <div>
+                <label for="Acepto"> ¿Acepta Terminos y condiciones de uso? </label>
+                <input type="checkbox" name="Acepto" id="Si" required>
+                <br>
+                <br>
+            </div>
+            <br>
+
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Reset">
+
+            </fieldset>
+
+        </form>
+    </main>
+
+    <aside></aside>
+
+    <br>
+    <br>
+    <br>
+
+    <footer class="footerC">
+        <h5>Dante Montiel Proyecto 2022</h5>
+        <div class="redes">
+            <img src="../assetts/Imagenes/whatsapp_png.png" alt="">
+            <img src="../assetts/Imagenes/twitter.png" alt="">
+        </div>
+    </footer>
+
+</body>
+</html>

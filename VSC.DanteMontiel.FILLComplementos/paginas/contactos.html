@@ -5,117 +5,87 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../assetts/Imagenes/fill complementos.png" type="image/x-icon">
-    <title>Contacto</title>
-    <link rel="stylesheet" href="../assetts/css/style.css">
+    <title>Fill Complementos</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assetts/css/style.css">
+
 </head>
-<body class="containerContactos">
-    <nav class="navbarC">
-        <div class="logoC">
-            <img src="../assetts/Imagenes/fill complementos.png" alt="">
+<body>
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Fill Complementos</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./productos.html">Productos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="./contactos.html">Contacto</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./quienesSomos.html">Quienes Somos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./fotos.html">Fotos</a>
+              </li>
+            
+            </ul>
+          </div>
         </div>
-        <ul>
-            <li><a href="../index.html">Inicio</a></li>
-            <li><a href="./contactos.html">Contacto</a></li>
-            <li><a href="./productos.html">Productos</a></li>
-            <li><a href="./quienesSomos.html">Quienes Somos?</a></li>
-            <li><a href="./fotos.html">Fotos</a></li>
-        </ul>
-        <div class="redesC">
-            <img src="../assetts/Imagenes/whatsapp_png.png">
-            <img src="../assetts/Imagenes/twitter.png" alt="">
-        </div>
-
-    </nav>
-
-    <Header class="headerC">
-        <h1>Contacto</h1>
-    </Header>
-
-    <main class="mainC"> 
-        <Ul class="infocontacto">
-            <li>Número de Telefono: 3875799794</li>
-            <li>Contacto por Whatsapp: 3875788234</li>
-            <li>Email: fillcomplementos@gmail.com</li>
-            <li>Direccion: Boulevard San Juan 1400.</li>
-        </Ul>
-        <br>
-        <br>
-        <br>
-        <form action="contactos.php" >
-            <fieldset class="infopersonal">
-                <legend>Informacion personal</legend>
-
-                <br>
-
-                <div>
-                    <label for="SEXO">Hombre</label>
-                    <input type="radio" name="Sexo" id="Hombre" value="H" required>
-    
-                    <label for="Sexo">Mujer</label>
-                    <input type="radio" name="Sexo" id="Mujer" value="M">
-
-                    <label for="Sexo">Otro</label>
-                    <input type="radio" name="Sexo" id="X" value="X">
-
-                    <br>
-                    <br>
-
-                </div>
-
-                <div>
-                    <label for="Nombre">Nombre</label>
-                    <input type="text" name="nombre" id="name" placeholder="Nombre" required>
-                    <label for="Apellido">Apellido</label>
-                    <input type="text" name="Apellido" id="" placeholder="Apellido" required> 
-                    <br>
-                    <label for="Email">Email</label>
-                    <input type="email" name="Email" id="Email" placeholder="Email" required>
-                </div>
- 
-
-                           
-                <br>
-
-            <div>
-                <label for="Nacionalidad">Nacionalidad</label>
-                     <select name="Nacionalidad" required>
-                        <option value="ARG"> Argentina </option>
-                        <option value="BRA"> Brasil </option>
-                        <option value="URU"> Uruguay </option>
-                        <option value="X">Otro</option>
-                </select>
-            </div>
-            <br>
-            <br>
-            <div>
-                <label for="Acepto"> ¿Acepta Terminos y condiciones de uso? </label>
-                <input type="checkbox" name="Acepto" id="Si" required>
-                <br>
-                <br>
-            </div>
-            <br>
-
-            <input type="submit" value="Enviar">
-            <input type="reset" value="Reset">
-
-            </fieldset>
-
+      </nav>
+    <header></header>
+    <main>
+        <h1 class="text-center my-5">Contacto</h1>
+        <Ul class="text-center">
+          <li>Número de Telefono: 3875799794</li>
+          <li>Contacto por Whatsapp: 3875788234</li>
+          <li>Email: fillcomplementos@gmail.com</li>
+          <li>Direccion: Boulevard San Juan 1400.</li>
+      </Ul>
+      <br>
+      <br>
+        <form class="row m-10 justify-content-center"  action="">
+            <div class="m-2 col-12 col-md-6 mb-3">
+                <label for="Nombre" class="form-label">Nombre</label>
+                <input type="text" class="form-control" id="Nombre" placeholder="Nombre">
+              </div>
+              <div class="m-2 col-12 col-md-6 mb-3">
+                <label for="Apellido" class="form-label">Apellido</label>
+                <input type="text" class="form-control" id="Apellido" placeholder="Apellido">
+              </div>
+              <div class="m-2 col-12 col-md-6 mb-3">
+                <label for="Numero" class="form-label">Numero de Telefono</label>
+                <input type="number" class="form-control" id="Numero" placeholder="Telefono">
+              </div>
+              <div class="m-2 col-12 col-md-6 mb-3">
+                <label for="Email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="Email" placeholder="name@example.com">
+              </div>
+              <br>
+              <br>
+              <input class="mt-2 w-50 m-6 text-success" type="Submit" value="Enviar">
         </form>
     </main>
-
     <aside></aside>
-
     <br>
     <br>
     <br>
-
-    <footer class="footerC">
-        <h5>Dante Montiel Proyecto 2022</h5>
-        <div class="redes">
-            <img src="../assetts/Imagenes/whatsapp_png.png" alt="">
-            <img src="../assetts/Imagenes/twitter.png" alt="">
-        </div>
-    </footer>
-
+    <br>
+    <br>
+    <footer>
+      <div class="container-fluid bg-light text-center p-3">
+          <p class="small">&copy; Todos los derechos reservados :: FILL COMPLEMENTOS :: Salta 2022 </p>
+      </div>
+      
+  </footer>
+    <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -6,106 +6,201 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./assetts/Imagenes/fill complementos.png" type="image/x-icon">
     <title>Fill Complementos</title>
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="./assetts/css/style.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
-<body class="container">
-
-    <nav class="navbar">
-        <div data-aos="flip-left" class="logo">
-            <img src="./assetts/Imagenes/fill complementos.png" alt="">
+<body>
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Fill Complementos</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./paginas/productos.html">Productos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./paginas/contactos.html">Contacto</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./paginas/quienesSomos.html">Quienes Somos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./paginas/fotos.html">Fotos</a>
+              </li>
+            
+            </ul>
+          </div>
         </div>
-        <ul>
-            <li><a href="./index.html">Inicio</a></li>
-            <li><a href="./paginas/contactos.html">Contacto</a></li>
-            <li><a href="./paginas/productos.html">Productos</a></li>
-            <li><a href="./paginas/quienesSomos.html">Quienes Somos?</a></li>
-            <li><a href="./paginas/fotos.html">Fotos</a></li>
-        </ul>
-        <div class="redes">
-            <img src="./assetts/Imagenes/whatsapp_png.png" alt="">
-            <img src="./assetts/Imagenes/twitter.png" alt="">
-        </div>
-
-    </nav>
-    <header class="header">
-            <h1>FILL Complementos</h1>
+      </nav>
+    <header>
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="./assetts/Imagenes/Jabon en polvora (1).jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Set Limpieza</h5>
+                  <p>Some representative placeholder content for the first slide.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="./assetts/Imagenes/Agua (1).jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Set Mesa</h5>
+                  <p>Some representative placeholder content for the second slide.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="./assetts/Imagenes/Alcohol en gel (1).jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Set Higiene</h5>
+                  <p>Some representative placeholder content for the third slide.</p>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+          </div>
     </header>
-
-    <main class="main">
-        <div class="tarjetas">
-            <div class="tarjeta">
-                <img class="tarjeta__img" src="./assetts/Imagenes/Suavisantes.jpeg" alt="">
-                <h5 class="tarjeta_titulo">Lorem, ipsum.</h5>
-                <p class="tarjeta__desc">Lorem ipsum dolor sit amet.</p>
-                <button class="btn">Comprar</button>
-            </div>
-            <div class="tarjeta">
-                <img class="tarjeta__img" src="./assetts/Imagenes/Suavisantes.jpeg" alt="">
-                <h5 class="tarjeta_titulo">Lorem, ipsum.</h5>
-                <p class="tarjeta__desc">Lorem ipsum dolor sit amet.</p>
-                <button class="btn">Comprar</button>
-            </div>
-            <div class="tarjeta">
-                <img class="tarjeta__img" src="./assetts/Imagenes/Suavisantes.jpeg" alt="">
-                <h5 class="tarjeta_titulo">Lorem, ipsum.</h5>
-                <p class="tarjeta__desc">Lorem ipsum dolor sit amet.</p>
-                <button class="btn">Comprar</button>
-            </div>
-            <div class="tarjeta">
-                <img class="tarjeta__img" src="./assetts/Imagenes/Suavisantes.jpeg" alt="">
-                <h5 class="tarjeta_titulo">Lorem, ipsum.</h5>
-                <p class="tarjeta__desc">Lorem ipsum dolor sit amet.</p>
-                <button class="btn">Comprar</button>
-            </div>
+    <main>
+        <h1 class="text-center my-5">Productos</h1>
+        <div class="cards d-flex flex-wrap justify-content-around">
+            <div class="card my-2" style="width: 18rem;">
+                <img src="./assetts/Imagenes/Agua (1).jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="https://articulo.mercadolibre.com.ar/MLA-1143339406-delantal-de-cocina-para-hombre-de-jean-y-detalles-en-cuero-_JM?quantity=1&variation_id=174679063843" class="btn btn-primary">Lo quiero!</a>
+                </div>
+              </div>
+              <div class="card my-2" style="width: 18rem;">
+                <img src="./assetts/Imagenes/Alcohol en gel (1).jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Lo quiero</a>
+                </div>
+              </div>
+              <div class="card my-2" style="width: 18rem;">
+                <img src="./assetts/Imagenes/Harina (1).jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Lo quiero</a>
+                </div>
+              </div>
+              <div class="card my-2" style="width: 18rem;">
+                <img src="./assetts/Imagenes/Jabon en polvora (1).jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Lo quiero</a>
+                </div>
+              </div>
+              <div class="card my-2" style="width: 18rem;">
+                <img src="./assetts/Imagenes/Suavisantes.jpeg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Lo quiero</a>
+                </div>
+              </div>
+              <div class="card my-2" style="width: 18rem;">
+                <img src="./assetts/Imagenes/Agua (1).jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Lo quiero</a>
+                </div>
+              </div>
+              <div class="cardProd my-2" style="width: 18rem;">
+                <img src="./assetts/Imagenes/Alcohol en gel (1).jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Lo quiero</a>
+                </div>
+              </div>
+              <div class="card my-2" style="width: 18rem;">
+                <img src="./assetts/Imagenes/Harina (1).jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Lo quiero</a>
+                </div>
+              </div>
+              <div class="card my-2" style="width: 18rem;">
+                <img src="./assetts/Imagenes/Jabon en polvora (1).jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Lo quiero</a>
+                </div>
+              </div>
+              <div class="card my-2" style="width: 18rem;">
+                <img src="./assetts/Imagenes/Harina (1).jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Lo quiero</a>
+                </div>
+              </div>
+              <div class="card my-2" style="width: 18rem;">
+                <img src="./assetts/Imagenes/Harina (1).jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Lo quiero</a>
+                </div>
+              </div>
+              <div class="card my-2" style="width: 18rem;">
+                <img src="./assetts/Imagenes/Harina (1).jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Lo quiero</a>
+                </div>
+              </div>
         </div>
     </main>
-<br>
-<br>
-    <aside class="aside">
-        <div class="metodospago">
-            <img src="./assetts/Imagenes/pagos.png" alt="">
-        </div>
-        <Div class="promociones">
-            <h5>Ultimas Promociones</h5>
-        </Div>
-        <div class="tarjetas">
-            <div class="tarjeta">
-                <img class="tarjeta__img" src="./assetts/Imagenes/cocina.jpeg" alt="">
-                <h5 class="tarjeta_titulo">Lorem, ipsum.</h5>
-                <p class="tarjeta__desc">Lorem ipsum dolor sit amet.</p>
-                <button class="btn">Comprar</button>
-            </div>
-            <div class="tarjeta">
-                <img class="tarjeta__img" src="./assetts/Imagenes/cocina.jpeg" alt="">
-                <h5 class="tarjeta_titulo">Lorem, ipsum.</h5>
-                <p class="tarjeta__desc">Lorem ipsum dolor sit amet.</p>
-                <button class="btn">Comprar</button>
-            </div>
-            <div class="tarjeta">
-                <img class="tarjeta__img" src="./assetts/Imagenes/cocina.jpeg" alt="">
-                <h5 class="tarjeta_titulo">Lorem, ipsum.</h5>
-                <p class="tarjeta__desc">Lorem ipsum dolor sit amet.</p>
-                <button class="btn">Comprar</button>
-            </div>
-            <div class="tarjeta">
-                <img class="tarjeta__img" src="./assetts/Imagenes/cocina.jpeg" alt="">
-                <h5 class="tarjeta_titulo">Lorem, ipsum.</h5>
-                <p class="tarjeta__desc">Lorem ipsum dolor sit amet.</p>
-                <button class="btn">Comprar</button>
-            </div>
+    <br>
+    <br>
+    <aside>
+        <div class=" d-flex justify-content-around">
+        <img src="./assetts/Imagenes/pagos.png" class="img-fluid" alt="...">
         </div>
     </aside>
-<br>
-<br>
-    <footer class="footer">
-        <h5>Dante Montiel Proyecto 2022</h5>
-        <div class="redes">
-            <img src="./assetts/Imagenes/whatsapp_png.png" alt="">
-            <img src="./assetts/Imagenes/twitter.png" alt="">
+    <br>
+    <br>
+    <footer>
+        <div class="container-fluid bg-light text-center p-3">
+            <p class="small">&copy; Todos los derechos reservados :: FILL COMPLEMENTOS :: Salta 2022 </p>
         </div>
+        
     </footer>
-    
+    <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
     AOS.init();

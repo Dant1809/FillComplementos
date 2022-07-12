@@ -1,0 +1,26 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.img-prod{
+    width: 30%;
+
+}
+.footer{
+    grid-area: footer;
+    width: 1500px;
+    background: linear-gradient(to bottom, #CECECE 0%, #150F06 100%);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.logo img {
+    height: 40px;
+}
+.redes img{
+    height: 20px;
+}
+.redes{
+    margin-right: 10px;
+}

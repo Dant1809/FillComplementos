@@ -24,3 +24,15 @@
 .redes{
     margin-right: 10px;
 }
+$btn:(
+    padding: 10px 15px,
+    border: 0,
+    radio 5px
+);
+
+
+.btn{
+    padding: map-get ($btn: , padding ),
+    border: map-get($btn: , bordes )
+    border-radius: map-get($btn: , radio )
+};
